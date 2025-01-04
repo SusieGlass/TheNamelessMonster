@@ -1,0 +1,31 @@
+/* Titres */
+h1 {
+font-family: 'Henny Penny', cursive;
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
+color : bisque;
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+.story-paragraph {
+font-family: 'Henny Penny', cursive;
+font-size: 1rem;
+/*font-family: 'Open Sans', sans-serif;*/
+color : bisque;
+text-align: center;
+
+}
+
+   /* Image de fond */
+body {
+background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/johan et monster image.png'); /* Chemin de ton image */
+background-size: cover; /* L'image prend toute la taille */
+background-position: center; /* Centrer l'image */
+background-repeat: no-repeat; /* Empêche la répétition */
+height: 100vh; /* Hauteur = 100% de la fenêtre */
+width: 100%; /* Largeur complète */
+filter: brightness(0.7); /* Réduit la luminosité à 70% */
+}
