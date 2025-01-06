@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;*/
+  position: relative; /* S'assure qu'il ne dépasse pas */
+  z-index: 1;
+  width: auto; /* S'ajuste à son contenu */
+  height: auto;
+
 }
 
 #next-button {

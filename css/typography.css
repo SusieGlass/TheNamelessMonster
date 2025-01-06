@@ -1,3 +1,12 @@
+
+/* HTML et BODY */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 100% de la hauteur de la fenêtre */
+  box-sizing: border-box;
+}
+
 /* Titres */
 h1 {
 font-family: 'Henny Penny', cursive;
@@ -12,20 +21,42 @@ padding-bottom: 30px;
 .story-paragraph {
 font-family: 'Henny Penny', cursive;
 font-size: 1rem;
-/*font-family: 'Open Sans', sans-serif;*/
 color : bisque;
 text-align: center;
 
 }
-
-   /* Image de fond */
 body {
+  background-image: url('../images/johan et monster image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 100vh;
+  position: relative; /* Permet l'utilisation du pseudo-élément */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Couche de dégradé avec opacité */
+  z-index: -1; /* Derrière le contenu */
+}
+
+
+/* Image de fond*/
+/*body {
+
 background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
                 url('../images/johan et monster image.png'); /* Chemin de ton image */
-background-size: cover; /* L'image prend toute la taille */
-background-position: center; /* Centrer l'image */
-background-repeat: no-repeat; /* Empêche la répétition */
-height: 100vh; /* Hauteur = 100% de la fenêtre */
-width: 100%; /* Largeur complète */
-filter: brightness(0.7); /* Réduit la luminosité à 70% */
-}
+/*position: relative; /* Position de base */
+/*z-index: 0; /* Derrière les autres contenus */
+/*background-size: cover; /* L'image prend toute la taille */
+/*background-position: center; /* Centrer l'image */
+/*background-repeat: no-repeat; /* Empêche la répétition */
+/*height: 100vh; /* Hauteur = 100% de la fenêtre */
+/*width: 100%; /* Largeur complète */
+/*filter: brightness(0.7);/* Réduit la luminosité à 70%
+}*/
