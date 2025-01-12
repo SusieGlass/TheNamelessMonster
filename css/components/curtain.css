@@ -7,16 +7,26 @@
   overflow: hidden;
 }
 
-/* Rideaux */
+
 .curtain {
+  background:
+  linear-gradient(to bottom, rgba(59, 3, 3, 0.8), rgba(146, 13, 13, 0.8)),
+  url('../../images/rideau-texture.png');
+  background-blend-mode: overlay; /* Combine le gradient et l'image avec un effet superposé */
+  background-size: cover; /* Ajuste pour couvrir toute la surface*/
+  background-repeat: no-repeat;  /*Évite les répétitions*/
+  background-position: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);/* Ajoute de la profondeur*/
   position: absolute;
   top: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to bottom, #450101, #920d0d); /* Effet de rideau */
   z-index: 10;
-  transition: transform 2s ease-in-out; /* Transition pour l'ouverture */
+  transition: transform 2s ease-in-out; /* Transition pour l'ouverture*/
 }
+
+
+
 
 /* Rideau gauche */
 .curtain-left {
