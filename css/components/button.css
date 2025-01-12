@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* S'assure qu'il ne dépasse pas */
+  position: fixed; /* S'assure qu'il ne dépasse pas */
+  bottom: 20px; /* Distance depuis le bas */
+  left: 50%; /* Centré horizontalement */
+  transform: translateX(-50%); /* Corrige le décalage du centrage */
   z-index: 1;
   width: auto; /* S'ajuste à son contenu */
   height: auto;

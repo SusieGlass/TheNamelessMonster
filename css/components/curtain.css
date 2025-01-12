@@ -1,0 +1,40 @@
+/* Style général pour la scène */
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent; /* Fond noir comme un théâtre */
+  overflow: hidden;
+}
+
+/* Rideaux */
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to bottom, #450101, #920d0d); /* Effet de rideau */
+  z-index: 10;
+  transition: transform 2s ease-in-out; /* Transition pour l'ouverture */
+}
+
+/* Rideau gauche */
+.curtain-left {
+  left: 0;
+  transform: translateX(0); /* Fermé */
+}
+
+/* Rideau droit */
+.curtain-right {
+  right: 0;
+  transform: translateX(0); /* Fermé */
+}
+
+/* Classe pour ouvrir les rideaux */
+.stage.open .curtain-left {
+  transform: translateX(-100%); /* Glisse vers la gauche */
+}
+
+.stage.open .curtain-right {
+  transform: translateX(100%); /* Glisse vers la droite */
+}

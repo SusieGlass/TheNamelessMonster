@@ -25,6 +25,14 @@ color : bisque;
 text-align: center;
 
 }
+/* Cacher les paragraphes non visibles */
+.story-paragraph {
+  display: none;
+}
+
+.story-paragraph.visible {
+  display: block;
+}
 body {
   background-image: url('../images/johan et monster image.png');
   background-size: cover;
@@ -43,20 +51,8 @@ body::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.8); /* Couche de dégradé avec opacité */
   z-index: -1; /* Derrière le contenu */
+  transition: opacity 2s ease-in-out; /* Transition fluide pour révéler l'image */
 }
-
-
-/* Image de fond*/
-/*body {
-
-background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-                url('../images/johan et monster image.png'); /* Chemin de ton image */
-/*position: relative; /* Position de base */
-/*z-index: 0; /* Derrière les autres contenus */
-/*background-size: cover; /* L'image prend toute la taille */
-/*background-position: center; /* Centrer l'image */
-/*background-repeat: no-repeat; /* Empêche la répétition */
-/*height: 100vh; /* Hauteur = 100% de la fenêtre */
-/*width: 100%; /* Largeur complète */
-/*filter: brightness(0.7);/* Réduit la luminosité à 70%
-}*/
+.stage.open ~ body::before {
+  opacity: 0; /* La couche sombre disparaît lorsque les rideaux s'ouvrent */
+}
