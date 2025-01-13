@@ -8,10 +8,10 @@ html, body {
 }
 
 /* Titres */
-h1 {
+h1, h2 {
 font-family: 'Henny Penny', cursive;
 text-align: center;
-font-size: 3rem;
+font-size: 5rem;
 font-weight: 700;
 color : bisque;
 padding-top: 30px;
@@ -34,7 +34,7 @@ text-align: center;
   display: block;
 }
 body {
-  background-image: url('../images/johan et monster image.png');
+  background-image: url('../images/paysage-noir-blanc.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;

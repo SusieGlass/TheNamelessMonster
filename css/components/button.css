@@ -13,27 +13,32 @@
 }
 
 #next-button {
-  background-color: #ab992f;
+  background-color: black; /* Fond noir */
+  border: 3px solid transparent; /* Bordure initiale transparente */
   border-radius: 100px;
-  box-shadow: rgba(255, 215, 0, .2) 0 -25px 18px -14px inset,rgba(255, 215, 0, .15) 0 1px 2px,rgba(255, 215, 0, .15) 0 2px 4px,rgba(255, 215, 0, .15) 0 4px 8px,rgba(255, 215, 0, .15) 0 8px 16px,rgba(255, 215, 0, .15) 0 16px 32px;
-  color: yellow;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6), /* Halo lumineux rose/violet */
+              0 0 20px rgba(255, 0, 255, 0.4),
+              0 0 30px rgba(255, 0, 255, 0.2);
+  color: white; /* Texte blanc */
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
-  border: 0;
   font-size: 20px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 200px;    /* Définit la largeur du bouton */
-  height: 60px;    /* Définit la hauteur du bouton */
-
+  width: 200px; /* Largeur */
+  height: 60px; /* Hauteur */
 }
+
 #next-button:hover {
-  box-shadow: rgba(255,215,0,.35) 0 -25px 18px -14px inset,rgba(255,215,0,.25) 0 1px 2px,rgba(255,215,0,.25) 0 2px 4px,rgba(255,215,0,.25) 0 4px 8px,rgba(255,215,0,.25) 0 8px 16px,rgba(255,215,0,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+  border-color: rgba(255, 0, 255, 0.8); /* Bordure lumineuse au survol */
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8),
+              0 0 30px rgba(255, 0, 255, 0.6),
+              0 0 45px rgba(255, 0, 255, 0.4); /* Intensifie l'effet lumineux */
+  transform: scale(1.05); /* Légère mise en avant au survol */
 }
