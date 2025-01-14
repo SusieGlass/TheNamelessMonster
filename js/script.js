@@ -1,9 +1,12 @@
 // Déclenche l'ouverture des rideaux après un délai
 window.addEventListener('load', () => {
   const stage = document.querySelector('.stage');
+  const audio = new Audio('assets/audio/nameless monster - audio.mp3');
+
   setTimeout(() => {
       stage.classList.add('open');
-  }, 1000); // Délai de 1 seconde avant l'ouverture
+      audio.play();
+  }, 1500); // Délai de 1 seconde avant l'ouverture
 });
 
 
